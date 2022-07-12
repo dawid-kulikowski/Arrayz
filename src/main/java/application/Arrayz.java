@@ -65,18 +65,33 @@ public class Arrayz {
 //    rotateLeft3([5, 11, 9]) → [11, 9, 5]
 //    rotateLeft3([7, 0, 0]) → [0, 0, 7]
 
-
     public static int[] rotateLeft3() {
         int[] nums = {1,2,3};
         return new int[] {nums[1],nums[2],nums[0]};
     }
 
-//ś
+//    Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
+//    reverse3([1, 2, 3]) → [3, 2, 1]
+//    reverse3([5, 11, 9]) → [9, 11, 5]
+//    reverse3([7, 0, 0]) → [0, 0, 7]
 
     public static int[] reverse3() {
         int[] nums = {1,2,3};
         return new int[] {nums[2],nums[1],nums[0]};
     }
 
+//    Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.
+//    maxEnd3([1, 2, 3])→ [3, 3, 3]
+//    maxEnd3([11, 5, 9]) → [11, 11, 11]
+//    maxEnd3([2, 11, 3]) → [3, 3, 3]
+
+    public int[] maxEnd3() {
+        int[] nums = {1,2,3};
+        if (nums[0] > nums[2]) {
+            return new int[]{nums[0],nums[0],nums[0]};
+        } else {
+            return new int[] {nums[2],nums[2],nums[2]};
+        }
+    }
 
 }
