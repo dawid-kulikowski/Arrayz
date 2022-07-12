@@ -7,5 +7,7 @@ public class Application {
         System.out.println("test");
         System.out.println(Arrayz.firstLast6());
         System.out.println(Arrayz.sameFirstLast());
+        System.out.println(Arrayz.commonEnd());
+        System.out.println(Arrayz.sum3());
     }
 }
