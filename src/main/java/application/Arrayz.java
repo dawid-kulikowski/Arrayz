@@ -1,5 +1,8 @@
 package application;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Arrayz {
 
 
@@ -179,7 +182,7 @@ public class Arrayz {
 //    double23([2, 3]) → false
 
     public boolean double23() {
-        int[] nums = {1,2,3}
+        int[] nums = {1,2,3};
         if (nums.length<2) {
             return false;
         } else if (nums[0]!=nums[1]){
@@ -190,6 +193,8 @@ public class Arrayz {
             return false;
         }
     }
+
+
 
 
 }
